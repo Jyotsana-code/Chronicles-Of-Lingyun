@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Navigation</title>
+    <link rel="stylesheet" href="city.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="menu">
+
+<svg viewBox="0 0 500 500">
+
+    <defs>
+
+        <clipPath id="topLeft">
+            <path d="M250,250 L250,0 A250,250 0 0,0 0,250 Z"/>
+        </clipPath>
+
+        <clipPath id="topRight">
+            <path d="M250,250 L500,250 A250,250 0 0,0 250,0 Z"/>
+        </clipPath>
+
+        <clipPath id="bottomRight">
+            <path d="M250,250 L250,500 A250,250 0 0,0 500,250 Z"/>
+        </clipPath>
+
+        <clipPath id="bottomLeft">
+            <path d="M250,250 L0,250 A250,250 0 0,0 250,500 Z"/>
+        </clipPath>
+
+    </defs>
+
+    <a href="cangsen.html">
+        <image href="images/green god.jpeg"
+               width="275"
+               height="375"
+               clip-path="url(#topLeft)"/>
+    </a>
+
+    <a href="baiyun.html">
+        <image href="images/white god.jpeg"
+               y="-70"
+               width="690"
+               height="590"
+               clip-path="url(#topRight)"/>
+    </a>
+
+    <a href="jingu.html">
+        <image href="images/yellow god.jpeg"
+               x="200"
+               y="120"
+               width="300"
+               height="530"
+               clip-path="url(#bottomRight)"/>
+    </a>
+
+    <a href="yancheng.html">
+        <image href="images/red god.jpeg"
+               width="300"
+               height="950"
+               clip-path="url(#bottomLeft)"/>
+    </a>
+
+    <!-- White divider lines -->
+    <line x1="250" y1="0" x2="250" y2="500"/>
+
+    <line x1="0" y1="250" x2="500" y2="250"/>
+
+    <!-- Outer Circle -->
+    <circle cx="250"
+            cy="250"
+            r="248"
+            fill="none"/>
+</svg>
+</body>
+</html>

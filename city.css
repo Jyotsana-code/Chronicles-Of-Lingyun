@@ -1,0 +1,388 @@
+
+/*JOURNEY PAGE*/
+/* Background */
+
+.background{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    url("images/green\ bg.jpeg") top left/50% 50% no-repeat,
+    url("images/white\ bg.jpeg") top right/50% 50% no-repeat,
+    url("images/yellow\ bg.jpeg") bottom right/50% 50% no-repeat,
+    url("images/red\ bg.jpeg") bottom left/50% 50% no-repeat;
+
+    filter:brightness(.55);
+}
+
+/* Circle */
+
+.menu{
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+}
+
+svg{
+    width:100%;
+    height:100%;
+}
+
+image{
+    cursor:pointer;
+    opacity:0.8;
+    transition:opacity .3s ease;
+}
+
+image:hover{
+    opacity:1;
+}
+image{
+    transform-origin: center;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+image:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+/*------------------------------------------*/
+/* CANGSEN Full page wrapper */
+.green.city-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.green.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("images/green\ bg.jpeg") center/cover no-repeat;
+    filter: grayscale(40%) brightness(40%);
+    z-index: 0;
+}
+
+/* Content on top */
+.green.content {
+    position: relative;
+    z-index: 1;
+    color: honeydew;
+    text-align: center;
+    padding: 0;
+    padding-top: 24px;
+    transform: translateY(-50px);
+}
+
+/* City name */
+.green.city-name {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: seagreen;
+    text-shadow: 0 0 10px #060606;
+}
+
+/* Subtitle */
+.green.subtitle {
+    font-size: 23px;
+    color: forestgreen;
+    margin-top: -10px;
+}
+
+/* Description */
+.green.description {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 17px;
+    color: darkseagreen;
+    line-height: 1.6;
+}
+
+/* Details box */
+.green.details {
+    font-size: 22px;
+    margin-top: 30px;
+    color: honeydew;
+}
+
+.green.details p {
+    margin: 8px 0;
+}
+
+/* Back link */
+.green.back {
+    display: inline-block;
+    margin-top: 15px;
+    color: olivedrab;
+    text-decoration: none;
+    font-size: 18px;
+}
+.green.back:hover{
+    color: forestgreen;
+    text-shadow:0 0 10px forestgreen,
+                0 0 20px forestgreen;
+    transition:0.3s;
+}
+/*----------------------------------------*/
+/* Baiyun Full page wrapper */
+.white.city-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background image */
+.white.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("images/white\ bg.jpeg") center/cover no-repeat;
+    filter: grayscale(40%) brightness(60%);
+    z-index: 0;
+}
+
+/* Content on top */
+.white.content {
+    position: relative;
+    z-index: 1;
+    color: #eaf1ee;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;     
+    transform: translateY(-50px); 
+}
+
+/* City name */
+.white.city-name {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px #0b0b0b;
+}
+
+/* Subtitle */
+.white.subtitle {
+    font-size: 25px;
+    color: white;
+    text-shadow: 6 0 10px #f6f1f1;
+    margin-top: -10px;
+}
+
+/* Description */
+.white.description {
+    max-width: 700px;
+    font-size: 16px;
+    margin: 20px auto;
+    color: #f8f8f8;
+    line-height: 1.6;
+    text-shadow: 0 0 8px rgba(0,0,0,3.0);
+}
+
+/* Details box */
+.white.details {
+    font-size: 20px;
+    margin-top: 30px;
+    color: ghostwhite;
+    text-shadow: 0 0 8px rgba(0,0,0,3.0);
+}
+
+.white.details p {
+    margin: 8px 0;
+}
+
+/* Back link */
+.white.back {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+    font-size: 18px;
+}
+.white.back:hover {
+    color:white;
+    text-shadow:0 0 10px white,
+                0 0 20px white;
+    transition:0.3s;
+}
+/*-----------------------------------------*/
+/* JINGU Full page wrapper */
+.yellow.city-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background image */
+.yellow.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("images/yellow\ bg.jpeg") center/cover no-repeat;
+    filter: grayscale(40%) brightness(40%);
+    z-index: 0;
+}
+
+/* Content on top */
+.yellow.content {
+    position: relative;
+    z-index: 1;
+    color: black;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    transform: translateY(-50px);
+}
+
+/* City name */
+.yellow.city-name {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color:goldenrod;
+    text-shadow: 0 0 10px #493e03;
+}
+
+/* Subtitle */
+.yellow.subtitle {
+    font-size: 23px;
+    color: gold;
+    margin-top: -10px;
+}
+
+/* Description */
+.yellow.description {
+    max-width: 700px;
+    font-size: 16px;
+    margin: 20px auto;
+    color: khaki;
+    line-height: 1.6;
+}
+
+/* Details box */
+.yellow.details {
+    font-size:20px;
+    margin-top: 25px;
+    color: lightyellow;
+}
+
+.yellow.details p {
+    margin: 8px 0;
+}
+
+/* Back link */
+.yellow.back {
+    display: inline-block;
+    margin-top: 19px;
+    color: moccasin;
+    text-decoration: none;
+    font-size: 18px;
+    transition:0.3s ease;
+}
+.yellow.back:hover {
+    color:#ffd700;
+    text-shadow:0 0 10px #ffd700,
+                0 0 20px #ffd700;
+    transition:0.3s;
+}
+
+/*----------------------------------------*/
+/* YANCHENG Full page wrapper */
+.red.city-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background image */
+.red.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("images/red\ bg.jpeg") center/cover no-repeat;
+    filter: grayscale(10%) brightness(70%);
+    z-index: 0;
+}
+
+/* Content on top */
+
+.red.content {
+    position: relative;
+    z-index: 1;
+    color: lightcoral;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;     
+    transform: translateY(-45px); 
+}
+/* City name */
+.red.city-name {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color:#FF3333;
+    text-shadow: 0 0 10px #030303;
+}
+
+/* Subtitle */
+.red.subtitle {
+    font-size: 26px;
+    color: tomato;
+    margin-top: -10px;
+}
+
+/* Description */
+.red.description {
+    max-width: 700px;
+    margin: 18px auto;
+    color: indianred;
+    font-size: 16px;
+    line-height: 1.6;
+    text-shadow: 0 0 8px rgba(0,0,0,3.0);
+}
+
+/* Details box */
+.red.details {
+    font-size: 18px;
+    margin-top: 30px;
+    color: mistyrose;
+}
+
+.red.details p {
+    margin: 8px 0;
+}
+
+/* Back link */
+.red.back {
+    display: inline-block;
+    margin-top: 12px;
+    color: darksalmon;
+    text-decoration: none;
+    font-size: 19px;
+}
+.red.back:hover {
+    color:tomato;
+    text-shadow:0 0 10px tomato,
+                0 0 20px tomato;
+    transition:0.3s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
